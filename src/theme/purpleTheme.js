@@ -12,5 +12,19 @@ export const purpleTheme = createTheme ({
         error: {
             main: red.A400
         }
+    },
+    components: {
+        MuiImageListItem:{
+            styleOverrides:{
+                root: {
+                    ".hidden-button": {
+                        display: "none"
+                    },
+                    ":hover .hidden-button": {
+                        display: "flex"
+                    }
+                }
+            }
+        }
     }
 });
